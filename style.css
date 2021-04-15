@@ -19,8 +19,7 @@ header {
 .container {
     width: 1200px;
     /* background-color: burlywood */
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 .nav_header {
@@ -45,10 +44,13 @@ header {
     font-family: 'Bebas Neue' , cursive; 
 }
 
+.btn_menu {
+    display: none;
+}
+
 .fundo_banner {
     width: 100%;
 }
-
 
 /* MAIN */
 main {
@@ -253,6 +255,32 @@ footer span {
     width: 80vw;
 }
 
+.container_header {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav_header {
+    /* display: none;  */
+    justify-content: space-evenly;
+    height: 300px;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.btn_menu {
+    display: inline-block;
+}
+
+.btn_menu i {
+    color: white;
+    font-size: 30px;
+}
+
 .container_banner {
     height: 600px;
     display: flex;
@@ -261,7 +289,8 @@ footer span {
 
 .fundo_banner {
     height: 100%;
-    width: auto;
+    width: 100%;
+    object-fit: cover;
 }
 
 .box_conteudo_banner {
@@ -326,18 +355,38 @@ hr {
 
 .container_info {
    flex-direction: column;
-   height: 100%;
-   width: auto;
+   height: 600px;
+   justify-content: space-evenly;
 }
 
-.box_span {
-   margin-bottom: 55px 
+.endereco {
+    height: 800px;
+    justify-content: space-evenly;
+}
+
+.endereco h2 {
+    width: unset;
+}
+
+.box_endereco {
+    width: 80vw;
+    height: unset;
+    padding: 60px 40px ;
+}
+
+.box_endereco p {
+    margin-left: 0;
+}
+
+.img_mapa {
+    position: unset;
+    width: 80vw;
+    margin-bottom: 45px;
 }
 
 footer span {
-   font-size: 20px;
-   width: 100%;
-   align-items: center;
+   width: 80vw;
+   text-align: center;
 }
 
 }
